@@ -1,0 +1,51 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+
+// 2. Include any default variable overrides here
+$primary: #25cc41;
+$secondary: #000000;
+$background-image: "green-light-background.jpg";
+$border-radius: 0 px;
+$border-width: 3px;
+$body-color: #fff;
+body {
+    font-family: 'Bahnschrift light', sans-serif !important;
+    background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/7cdb3d52-6537-4184-8a60-165e5c202a84/da9420t-fb722a23-9f78-4a92-89b7-c33d4bc61104.png");
+    background-position: center;
+    background-size: cover
+    };
+.hover-bg-primary:hover {
+    background-color: $primary;
+    transition-duration: .6s;
+}
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/modal";
+
+
+
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// 6. Add additional custom code here
